@@ -20,6 +20,7 @@ class Home extends CI_Controller {
 				$this->load->view('tambah');
 				$this->load->view('footer');
 			} else {
+		$username = $this->session->userdata('id_user');
 		$title = $this->input->post('title');
 		$content = $this->input->post('content');
 		$kategori = $this->input->post('kategori');
@@ -28,7 +29,8 @@ class Home extends CI_Controller {
 					'title'=>$title,
 					'content'=>$content,
 					'kategori'=>$kategori,
-					'image'	=> $gambar['file_name']
+					'image'	=> $gambar['file_name'],
+					'id_user'=>$username
 				);
 				$this->model_news->tambah($data,'news');
 				redirect(base_url('home'));

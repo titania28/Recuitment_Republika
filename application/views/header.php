@@ -60,7 +60,22 @@
                   <h5 class="centered"><?php echo $this->session->userdata('email');?></h5>
                   <?php } ?>
 
-              </ul>
+              <li class="sub-menu">
+                      <a href="<?php echo base_url();?>home" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Home</span>
+                      </a>
+                  </li>
+
+
+              <li class="mt">
+                      <a  href="<?php echo base_url();?>home/proses">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Tambah Berita</span>
+                      </a>
+                  </li>
+
+                  </ul>
               <!-- sidebar menu end-->
           </div>
       </aside>
