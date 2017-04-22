@@ -44,7 +44,8 @@
             <input type="password" name="password" required autocomplete="off"/>
           </div>
           
-          <p class="forgot"><a href="<?php echo base_url();?>login/addreg">Sign Up</a></p>
+          <p class="forgot"><a href="<?php echo base_url();?>login/addreg">Sign Up</a></p><br>
+           <p class="forgot"><a href="#">Gunakan Email Perusahaan (@rol..)</a></p>
           
           <button class="button button-block"/>Log In</button>
           

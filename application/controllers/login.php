@@ -40,7 +40,7 @@ class Login extends CI_Controller{
 		$nama = $this->input->post('nama');
 		$data =	array(
 					'email'=>$emaill,
-					'password'=>$password,
+					'password'=>md5($password),
 					'nama'=>$nama
 				);
 				$this->model_login->tambah_user($data,'user');

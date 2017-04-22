@@ -4,7 +4,7 @@ class Model_login extends CI_Model{
 	public function check_user($emailsent,$passent){
 		$email = $emailsent;
 		$pass = $passent;
-		$query = $this->db->get_where('user',array('email' => $email, 'password' =>$pass));
+		$query = $this->db->get_where('user',array('email' => $email, 'password' =>md5($pass)));
 		$user = $query->row();
 		
 		if($query->num_rows() > 0){

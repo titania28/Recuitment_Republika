@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Sign-Up/Login Form</title>
+  <title>Recuitment Republika</title>
   <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
@@ -49,11 +49,10 @@
             </label>
             <input type="nama" name="nama" required autocomplete="off"/>
           </div>
-
+          <p class="forgot"><a href="#">Gunakan Email Perusahaan (@rol..)</a></p>
           <button class="button button-block"/>Sign up</button>
           
           </form><!-- tab-content -->
-      
 </div> <!-- /form -->
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 

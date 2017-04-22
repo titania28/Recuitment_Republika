@@ -1,6 +1,8 @@
 <?php 
 class Model_news extends CI_Model {
 
+public $db_table ='news';
+
 public function tambah($data, $table){
 		$this->db->insert($table, $data);
 	}	
