@@ -7,7 +7,8 @@
                       <div class="content-panel">
                           <table class="table table-striped table-advance table-hover">
                              <div class="form-group">
-                               <form action="<?php echo base_url();?>home/mencari" method="post">
+                              <div class="col-sm-10">
+                                <form action="<?php echo base_url();?>home/mencari" method="post">
                               <div class="col-sm-10">
                                   <input type="text"  name="cari" class="form-control" placeholder="Masukkan Title">
                               </div>
@@ -26,7 +27,7 @@
                               </tr>
                               </thead>
                               <tbody>
-                               <?php foreach($news as $a) { ?>
+                               <?php foreach($cari as $a) { ?>
                               <tr>
                                   <td><?php echo $a->title;?></td>
                                    <td><?php echo $a->content;?></td>

@@ -95,5 +95,12 @@ class Home extends CI_Controller {
 		}
 	}
 
+	function mencari() {
+	$data['cari'] = $this->model_news->cari();
+	$this->load->view('header');
+	$this->load->view('cari', $data);
+	$this->load->view('footer');
+	}
+
 }
 ?>

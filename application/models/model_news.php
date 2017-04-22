@@ -6,8 +6,10 @@ public function tambah($data, $table){
 	}	
 
 	function berita(){
-		$query = $this->db->query("SELECT * FROM `news`");
-		return $query->result();
+		return $this->db->select("news.title,news.content,news.kategori,news.image,user.nama,news.id")
+		->join('user','user.id_user = news.id_user')
+		->get('news')		
+		->result();
 	}
 
 	function batal($id)
@@ -29,6 +31,14 @@ public function tambah($data, $table){
 	public function update($id, $data_products){
 		$this->db->where('id', $id)
 				 ->update('news', $data_products);
+	}
+	public function cari()
+	{
+	$c = $this->input->POST ('cari');
+	$this->db->like('title', $c);
+	return $this->db->join('user','user.id_user = news.id_user')
+	->get ('news')
+	->result(); 
 	}
 }
 ?>

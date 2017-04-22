@@ -42,7 +42,7 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>Recuitmen Republika</b></a>
+            <a href="<?php echo base_url();?>home" class="logo"><b>Recuitmen Republika</b></a>
             <div class="top-menu">
               <ul class="nav pull-right top-menu">
                     <li><a class="logout" href="<?php echo base_url();?>login/logout">Logout</a></li>
@@ -55,7 +55,7 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
-                  <p class="centered"><a href="profile.html"><img src="<?php echo base_url();?>source/Theme/assets/img/logo.jpg" class="img-circle" width="60"></a></p>
+                  <p class="centered"><a href="<?php echo base_url();?>home"><img src="<?php echo base_url();?>source/Theme/assets/img/logo.jpg" class="img-circle" width="60"></a></p>
                   <?php if($this->session->userdata('logged_in')==TRUE)  {?>
                   <h5 class="centered"><?php echo $this->session->userdata('email');?></h5>
                   <?php } ?>
